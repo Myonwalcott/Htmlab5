@@ -1,91 +1,81 @@
 body {
     font-family: 'Roboto', sans-serif;
     max-width: 800px;
-    margin: var(--margin);
+    margin: 0 auto;
     padding: 20px;
-    
     background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiWxNs_2vXpORB4B_98IB6p5aWqVYZBMegnXC-rsCMpKLMIfC1');
-                        
-    height: 100%;
     color: var(--primary-color);
-    
 }
-.iframe, .audio, .audio {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-    align-content: center;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
 }
-.img {
-    max-width: fit-content;
-    min-width: 20px;
-    height: 10px;
-    margin-bottom: 20px;
-    align-items: center;
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.caption {
-    font-style: italic;
-    color: #666;
+
+.flex-item {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--third-color);
+    border: 0px solid #0b0202 outset #5fc2f8; 
+    margin: 10px;                                                        
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: clamp(1rem, 2vw, 2rem);
+    text-align: center;
+    background: -webkit-linear-gradient(#e57c29, #442825);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content {
+    background: -webkit-linear-gradient(#e57c29, #442825);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro:hover {
+    font-size: var(--font-size);
+    background: -webkit-linear-gradient(#e57c29, #442825);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: var(--margin);
+}
+
+header {
+    background-color: var(--third-color);
+    padding: 20px;
     text-align: center;
 }
-.flex-container {
-    display: flex; 
-    justify-content: space-around; 
-    
-     
-    padding: 3px; 
-    background: var(--secondary-color); 
-    
-    }
 
-            .flex-item {
-                background-color: var(--third-color);
-                border: 0px solid #0b0202 outset #5fc2f8 ; 
-                padding: 20px; 
-                margin: 10px;                                                        
-                flex-grow: 1; }
-                    .container {
-                        width: 100%;
-                        max-width: 100%; 
-                        margin: 0 auto;
-                        padding: 0 20px;
-                    }
-                    :root {
-                        --primary-color: #e57c29;
-                        --secondary-color: #442825;
-                        --third-color: rgb(13, 1, 28);
-                        --font-size: 30px;
-                        --margin: 10px;
-                    }
-                    .title{
-                        color: var(--primary-color);
-                        font-size: clamp(1rem,2vw,2rem);
-                        text-align: center;
-                        background: -webkit-linear-gradient(#e57c29,#442825);
-                         -webkit-background-clip: text;
-                         -webkit-text-fill-color: transparent;                   
-                    }
-                    .content{
-                        background: -webkit-linear-gradient(#e57c29,#442825);
-                         -webkit-background-clip: text;
-                         -webkit-text-fill-color: transparent;
-                         
-                    }
-                    .intro:hover{
-                         font-size: var(--font-size);
-                         background: -webkit-linear-gradient(#e57c29,#442825);
-                         -webkit-background-clip: text;
-                         -webkit-text-fill-color: transparent;
-                        margin: var(--margin);
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-                        }
-                        .sidebar {
-                            flex: 1;
-                            background-color: #f0f0f0;
-                            padding: 20px;
-                            border-radius: 8px;
-                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                        
-                        }
-                
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+}
