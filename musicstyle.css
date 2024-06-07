@@ -111,6 +111,6 @@ a {
 .pic,
  iframe{
     max-width:90%;
-    width: auto;
+    width: fit-content;
     height: auto;
 }
