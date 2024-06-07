@@ -26,15 +26,16 @@ body {
 }
 
 .sidebarright {
-    right: 0}
+    right: 0;
+    width: 100px; /* Adjust sidebar width */
+}
 
 .flex-container {
-    margin-left: 220px; /* Adjust margin to account for sidebar width */
-    margin-right: 700px; /* Adjust margin to account for sidebar width */
+    margin-left: 120px; /* Adjust margin to account for sidebar width */
+    margin-right: 120px; /* Adjust margin to account for sidebar width */
     padding: 3px;
     background: var(--secondary-color);
-    width: 700px;
-    flex: 2;
+    flex: 1;
 }
 
 .flex-item {
