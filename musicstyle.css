@@ -8,6 +8,7 @@ body {
                         
     height: 100%;
     color: var(--primary-color);
+    
 }
 .iframe, .audio, .audio {
     width: 100%;
@@ -51,12 +52,30 @@ body {
                         --primary-color: #e57c29;
                         --secondary-color: #442825;
                         --third-color: rgb(13, 1, 28);
-                        --font-size: 16px;
+                        --font-size: 30px;
                         --margin: 10px;
                     }
                     .title{
                         color: var(--primary-color);
                         font-size: clamp(1rem,2vw,2rem);
+                        text-align: center;
+                        background: -webkit-linear-gradient(#e57c29,#442825);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;                   
                     }
+                    .content{
+                        background: -webkit-linear-gradient(#e57c29,#442825);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;
+                         
+                    }
+                    .intro:hover{
+                         font-size: var(--font-size);
+                         background: -webkit-linear-gradient(#e57c29,#442825);
+                         -webkit-background-clip: text;
+                         -webkit-text-fill-color: transparent;
+                        margin: var(--margin);
 
+
+                        }
                 
