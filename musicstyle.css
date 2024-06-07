@@ -1,34 +1,63 @@
 body {
     font-family: 'Roboto', sans-serif;
     max-width: 800px;
-    margin: 0 auto;
+    margin: var(--margin);
     padding: 20px;
     background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiWxNs_2vXpORB4B_98IB6p5aWqVYZBMegnXC-rsCMpKLMIfC1');
     color: var(--primary-color);
+    height: 100%;
+    position: relative; /* Make body relative for absolute positioning */
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-}
-
-.sidebar {
-    width: 200px;
-    background-color: #f0f0f0;
+.sidebarleft,
+.sidebarright {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: var(--third-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.sidebarleft {
+    left: 0;
+}
+
+.sidebarright {
+    right: 0;
+}
+
+.flex-container {
+    margin-left: 220px; /* Adjust margin to account for sidebar width */
+    margin-right: 300px; /* Adjust margin to account for sidebar width */
+    padding: 3px;
+    background: var(--secondary-color);
+    width: 700px;
+    flex: 2;
+}
+
 .flex-item {
-    flex: 1;
-    padding: 20px;
     background-color: var(--third-color);
-    border: 0px solid #0b0202 outset #5fc2f8; 
-    margin: 10px;                                                        
+    padding: 20px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+:root {
+    --primary-color: #e57c29;
+    --secondary-color: #442825;
+    --third-color: rgb(13, 1, 28);
+    --font-size: 30px;
+    --margin: 10px;
 }
 
 .title {
@@ -55,27 +84,28 @@ body {
 }
 
 header {
-    background-color: var(--third-color);
     padding: 20px;
     text-align: center;
 }
 
-nav {
-    margin-top: 20px;
+nav,
+ul {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
+nav,
+ul,
+li {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
+nav,
+ul,
+li,
+a {
     text-decoration: none;
     font-size: 18px;
 }
