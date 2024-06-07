@@ -26,12 +26,11 @@ body {
 }
 
 .sidebarright {
-    right: 0;
-}
+    right: 0}
 
 .flex-container {
     margin-left: 220px; /* Adjust margin to account for sidebar width */
-    margin-right: 300px; /* Adjust margin to account for sidebar width */
+    margin-right: 700px; /* Adjust margin to account for sidebar width */
     padding: 3px;
     background: var(--secondary-color);
     width: 700px;
