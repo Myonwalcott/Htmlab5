@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/557/555/original/abstract-bubbles-on-a-red-background-free-vector.jpg');
+                        
+    height: 100%;
+}
+.iframe, .audio, .audio {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    align-content: center;
+}
+.img {
+    max-width: fit-content;
+    min-width: 20px;
+    height: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.caption {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+}
+.flex-container {
+    display: flex; 
+    justify-content: space-around; 
+     
+    padding: 3px; 
+    background: rgb(238, 139, 157); 
+    }
+
+            .flex-item {
+                background-color: rgb(164, 47, 68);
+                border: 0px solid #0b0202 outset #5fc2f8 ; 
+                padding: 20px; 
+                margin: 10px;                                                        
+                flex-grow: 1; }
+                    .container {
+                        width: 100%;
+                        max-width: 100%; 
+                        margin: 0 auto;
+                        padding: 0 20px;
+                    }
