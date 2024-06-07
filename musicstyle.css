@@ -7,7 +7,7 @@ body {
     background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiWxNs_2vXpORB4B_98IB6p5aWqVYZBMegnXC-rsCMpKLMIfC1');
                         
     height: 100%;
-
+    color: var(--primary-color);
 }
 .iframe, .audio, .audio {
     width: 100%;
@@ -32,11 +32,11 @@ body {
     justify-content: space-around; 
      
     padding: 3px; 
-    background: rgb(13, 1, 28); 
+    background: var(--secondary-color); 
     }
 
             .flex-item {
-                background-color: rgb(164, 47, 68);
+                background-color: var(--third-color);
                 border: 0px solid #0b0202 outset #5fc2f8 ; 
                 padding: 20px; 
                 margin: 10px;                                                        
@@ -48,8 +48,15 @@ body {
                         padding: 0 20px;
                     }
                     :root {
-                        --primary-color: #ff4500;
-                        --secondary-color: #0066ff;
+                        --primary-color: #e57c29;
+                        --secondary-color: #442825;
+                        --third-color: rgb(13, 1, 28);
                         --font-size: 16px;
                         --margin: 10px;
                     }
+                    .title{
+                        color: var(--primary-color);
+
+                    }
+
+                
